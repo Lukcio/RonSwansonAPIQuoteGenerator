@@ -10,8 +10,11 @@
 		14AE080320F52FF3005D15FA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AE080220F52FF3005D15FA /* AppDelegate.swift */; };
 		14AE080520F52FF3005D15FA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AE080420F52FF3005D15FA /* ViewController.swift */; };
 		14AE080820F52FF3005D15FA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AE080620F52FF3005D15FA /* Main.storyboard */; };
-		14AE080A20F52FF4005D15FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AE080920F52FF4005D15FA /* Assets.xcassets */; };
 		14AE080D20F52FF4005D15FA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14AE080B20F52FF4005D15FA /* LaunchScreen.storyboard */; };
+		14AE081520F532C4005D15FA /* QuotesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AE081420F532C4005D15FA /* QuotesViewController.swift */; };
+		14AE081720F53868005D15FA /* InputTransferClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AE081620F53868005D15FA /* InputTransferClass.swift */; };
+		14AE081920F53D15005D15FA /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14AE081820F53D15005D15FA /* SwiftyJSON.swift */; };
+		14AE081B20F5572B005D15FA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14AE081A20F5572B005D15FA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,9 +22,12 @@
 		14AE080220F52FF3005D15FA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		14AE080420F52FF3005D15FA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		14AE080720F52FF3005D15FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		14AE080920F52FF4005D15FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		14AE080C20F52FF4005D15FA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		14AE080E20F52FF4005D15FA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14AE081420F532C4005D15FA /* QuotesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewController.swift; sourceTree = "<group>"; };
+		14AE081620F53868005D15FA /* InputTransferClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTransferClass.swift; sourceTree = "<group>"; };
+		14AE081820F53D15005D15FA /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
+		14AE081A20F5572B005D15FA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../../Assets.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,9 +63,12 @@
 				14AE080220F52FF3005D15FA /* AppDelegate.swift */,
 				14AE080420F52FF3005D15FA /* ViewController.swift */,
 				14AE080620F52FF3005D15FA /* Main.storyboard */,
-				14AE080920F52FF4005D15FA /* Assets.xcassets */,
+				14AE081620F53868005D15FA /* InputTransferClass.swift */,
+				14AE081420F532C4005D15FA /* QuotesViewController.swift */,
+				14AE081A20F5572B005D15FA /* Assets.xcassets */,
 				14AE080B20F52FF4005D15FA /* LaunchScreen.storyboard */,
 				14AE080E20F52FF4005D15FA /* Info.plist */,
+				14AE081820F53D15005D15FA /* SwiftyJSON.swift */,
 			);
 			path = BreakingBadAPIQuoteGenerator;
 			sourceTree = "<group>";
@@ -123,7 +132,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				14AE080D20F52FF4005D15FA /* LaunchScreen.storyboard in Resources */,
-				14AE080A20F52FF4005D15FA /* Assets.xcassets in Resources */,
+				14AE081B20F5572B005D15FA /* Assets.xcassets in Resources */,
 				14AE080820F52FF3005D15FA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -136,6 +145,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				14AE080520F52FF3005D15FA /* ViewController.swift in Sources */,
+				14AE081520F532C4005D15FA /* QuotesViewController.swift in Sources */,
+				14AE081720F53868005D15FA /* InputTransferClass.swift in Sources */,
+				14AE081920F53D15005D15FA /* SwiftyJSON.swift in Sources */,
 				14AE080320F52FF3005D15FA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
