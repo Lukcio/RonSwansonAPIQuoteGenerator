@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:BreakingBadAPIQuoteGenerator.xcodeproj">
+      location = "self:/Users/lucasleschynski/Desktop/Mobile Makers/BreakingBadAPIQuoteGenerator/BreakingBadAPIQuoteGenerator.xcodeproj">
    </FileRef>
 </Workspace>
