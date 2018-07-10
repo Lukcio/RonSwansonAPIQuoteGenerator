@@ -22,7 +22,6 @@ class QuotesViewController: UITableViewController {
         print(query)
         DispatchQueue.global(qos: .userInitiated).async {
             [unowned self] in
-            
             if let url = URL(string: query) {
                 if let data = try? Data(contentsOf: url) {
                     let json = try! JSON(data: data)
@@ -30,7 +29,7 @@ class QuotesViewController: UITableViewController {
                         return
                 }
             }
-            //self.loadError()
+            self.loadError()
         }
         DispatchQueue.main.async {
             [unowned self] in
@@ -70,16 +69,14 @@ class QuotesViewController: UITableViewController {
         return quotes.count
     }
     
-    var index = 0
+    var index = 0 //for some reason, declaring the variable here makes it work...
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         let source = quotes[indexPath.row]
-//        for i in 0...quotes.count-1 {
             cell.textLabel!.text = quotes[index]
             cell.detailTextLabel?.text = quotes[index]
         index += 1
-        //}
         return cell
     }
     
@@ -91,9 +88,4 @@ class QuotesViewController: UITableViewController {
         let dvc = segue.destination as! ViewController
         let index = tableView.indexPathForSelectedRow?.row
     }
-    
-//    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let url = URL(string: articles[indexPath.row]["url"]!)
-//        UIApplication.shared.open(url! as URL, options: [:], completionHandler: nil)
-//    }
 }
